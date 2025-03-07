@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Bloggplattform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Min Bloggplattform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Hem</a></li>
+                <li><a href="#new-post">Skapa inlägg</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="new-post" class="form-container">
+            <h2>Skapa nytt inlägg</h2>
+            <form id="blog-form">
+                <div class="form-group">
+                    <label for="post-title">Titel:</label>
+                    <input type="text" id="post-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author-name">Författare:</label>
+                    <input type="text" id="author-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Innehåll:</label>
+                    <textarea id="post-content" rows="6" required></textarea>
+                </div>
+                <button type="submit" id="submit-post">Publicera</button>
+            </form>
+        </section>
+
+        <section id="home">
+            <h2>Senaste inläggen</h2>
+            <div id="blog-posts" class="posts-container">
+                <!-- Här visas blogginläggen dynamiskt -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Min Bloggplattform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
